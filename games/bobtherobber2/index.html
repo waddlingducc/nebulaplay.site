@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob The Robber 2</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .ad-container {
+            width: 120px; /* Adjust to your desired ad width */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 80vw; /* Main content takes up 80% of the width */
+            height: 90vh; /* Adjust for the iframe height */
+            border: none;
+        }
+
+        /* Style the ads */
+        .adsbygoogle {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left ad -->
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2366308143645027"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width:120px; height:600px" <!-- You can adjust height to your preference -->
+             data-ad-client="ca-pub-2366308143645027"
+             data-ad-slot="8661037348"
+             data-ad-format="vertical"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Game iframe -->
+    <iframe src="https://main.dd8vt524eqsk2.amplifyapp.com/projects/bobtherobber2/index.html">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+
+    <!-- Right ad -->
+    <div class="ad-container">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2366308143645027"
+                crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block; width:120px; height:600px" <!-- Adjust the height accordingly -->
+             data-ad-client="ca-pub-2366308143645027"
+             data-ad-slot="8661037348"
+             data-ad-format="vertical"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</div>
+
+</body>
+</html>
