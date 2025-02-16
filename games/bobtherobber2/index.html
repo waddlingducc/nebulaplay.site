@@ -9,75 +9,75 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .ad-container {
-            width: 120px; /* Adjust to your desired ad width */
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url(https://i.ibb.co/4ZMGnKmk/rgtrg455555.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        .horizontal-ad {
+            width: 100%;
+            display: flex;
             justify-content: center;
+            background-color: transparent;
+            margin: 5px 0;
         }
-
-        iframe {
-            width: 80vw; /* Main content takes up 80% of the width */
-            height: 90vh; /* Adjust for the iframe height */
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .ad-container {
+            width: 300px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+        }
+        .game-container {
+            width: 60vw;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #000;
+        }
+        iframe.game {
+            width: 100%;
+            height: 100%;
             border: none;
-        }
-
-        /* Style the ads */
-        .adsbygoogle {
-            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <!-- Left ad -->
-    <div class="ad-container">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2366308143645027"
-                crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-             style="display:block; width:120px; height:600px" <!-- You can adjust height to your preference -->
-             data-ad-client="ca-pub-2366308143645027"
-             data-ad-slot="8661037348"
-             data-ad-format="vertical"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+    <div class="horizontal-ad">
+        <iframe data-aa='2381738' src='//ad.a-ads.com/2381738?size=970x90' style='width:970px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
     </div>
-
-    <!-- Game iframe -->
-    <iframe src="https://main.dd8vt524eqsk2.amplifyapp.com/projects/bobtherobber2/index.html">
-        <p>Your browser does not support iframes.</p>
-    </iframe>
-
-    <!-- Right ad -->
-    <div class="ad-container">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2366308143645027"
-                crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-             style="display:block; width:120px; height:600px" <!-- Adjust the height accordingly -->
-             data-ad-client="ca-pub-2366308143645027"
-             data-ad-slot="8661037348"
-             data-ad-format="vertical"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+    <div class="main-content">
+        <div class="ad-container">
+            <iframe data-aa='2381743' src='//ad.a-ads.com/2381743?size=300x600' style='width:300px; height:600px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+        </div>
+        <div class="game-container">
+            <iframe class="game" src="https://main.dd8vt524eqsk2.amplifyapp.com/projects/bobtherobber2/index.html">
+                <p>Your browser does not support iframes.</p>
+            </iframe>
+        </div>
+        <div class="ad-container">
+            <iframe data-aa='2381743' src='//ad.a-ads.com/2381743?size=300x600' style='width:300px; height:600px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+        </div>
     </div>
-</div>
-
+    <div class="horizontal-ad">
+        <iframe data-aa='2381738' src='//ad.a-ads.com/2381738?size=970x90' style='width:970px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+    </div>
 </body>
 </html>
